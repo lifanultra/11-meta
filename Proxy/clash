@@ -1,10 +1,10 @@
 ####################################
-# 创建者：lifan
+# 创建者：fan
 # 客户端：Clash
-# 创建时间：2023-10-28 14:35:35
+# 创建时间：2023-10-30 18:12:31
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：12
-# 节点类型：vmess, trojan
+# 节点数量：16
+# 节点类型：vmess, ss, trojan
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -86,54 +86,66 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸 US LIFAN","type":"vmess","server":"mg1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"f-vali.cp31.ott.cibntv.net"}}}
   - {"name":"🇹🇼 TW 台湾 ULTRA","type":"vmess","server":"ncst.eu.org","port":110,"cipher":"auto","uuid":"f9901a8a-361e-4658-b3d6-5d6c9fdf9a11","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lifan","headers":{"host":"ncst.eu.org"}}}
-  - {"name":"🇸🇬 SG 狮城 01","type":"vmess","server":"sg2.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
-  - {"name":"🇸🇬 SG 狮城 02","type":"vmess","server":"sg1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
-  - {"name":"🇸🇬 SG 狮城 03","type":"vmess","server":"sg3.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"f-vali.cp31.ott.cibntv.net"}}}
-  - {"name":"🇯🇵 JP  日本 01\r\r\r\r\r","type":"trojan","server":"ce22.262291.xyz","port":443,"udp":true,"password":"f5930d22-ee85-438d-a58e-af849da0bb84","sni":"ce22.262291.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵 JP  日本 02\r\r\r\r\r","type":"trojan","server":"sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵 JP  日本 03\r\r\r\r\r","type":"trojan","server":"jgw.262291.xyz","port":443,"udp":true,"password":"f5930d22-ee85-438d-a58e-af849da0bb84","sni":"jgw.262291.xyz","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵 JP  日本 04","type":"vmess","server":"99.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"gw.alicdn.com"}}}
-  - {"name":"🇯🇵 JP  日本 05","type":"vmess","server":"rb1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
-  - {"name":"🇯🇵 JP 日本 06","type":"vmess","server":"rb2.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
-  - {"name":"🇯🇵 JP 日本 07","type":"vmess","server":"jgw.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jgw.262291.xyz"}}}
+  - {"name":"🇹🇼 TW  台湾 01","type":"vmess","server":"gd-cm.timiwc.com","port":20602,"cipher":"auto","uuid":"","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇹🇼 TW  台湾 02","type":"vmess","server":"sh-cm.timiwc.com","port":20603,"cipher":"auto","uuid":"","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 HK  香港 01","type":"ss","server":"gdcm.timiwc.com","port":48793,"password":"55179f89-d874-4b6e-a6be-ec62899291c3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰 HK  香港 02","type":"ss","server":"js-cm.timiwc.com","port":58909,"password":"55179f89-d874-4b6e-a6be-ec62899291c3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇸🇬 SG 狮城 01","type":"vmess","server":"sg1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
+  - {"name":"🇸🇬 SG 狮城 02","type":"vmess","server":"sg3.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"f-vali.cp31.ott.cibntv.net"}}}
+  - {"name":"🇸🇬 SG 狮城 03","type":"trojan","server":"sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US  美国 01","type":"vmess","server":"mg1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"f-vali.cp31.ott.cibntv.net"}}}
+  - {"name":"🇺🇸 US  美国 02","type":"vmess","server":"sh-cm.timiwc.com","port":20503,"cipher":"auto","uuid":"","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US  美国 03","type":"trojan","server":"mglmtv22.laoxiechuanmei.cc","port":46523,"udp":true,"password":"55179f89-d874-4b6e-a6be-ec62899291c3","sni":"mglmtv22.laoxiechuanmei.cc","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 JP  日本 01\r\r\r\r\r\r\r","type":"trojan","server":"ce22.262291.xyz","port":443,"udp":true,"password":"f5930d22-ee85-438d-a58e-af849da0bb84","sni":"ce22.262291.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 JP  日本 02\r\r","type":"trojan","server":"jgw.262291.xyz","port":443,"udp":true,"password":"f5930d22-ee85-438d-a58e-af849da0bb84","sni":"jgw.262291.xyz","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 JP  日本 03","type":"vmess","server":"rb1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
+  - {"name":"🇯🇵 JP 日本 04","type":"vmess","server":"rb2.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
+  - {"name":"🇯🇵 JP 日本 05","type":"vmess","server":"jgw.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jgw.262291.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 US LIFAN
       - 🇹🇼 TW 台湾 ULTRA
+      - 🇹🇼 TW  台湾 01
+      - 🇹🇼 TW  台湾 02
+      - 🇭🇰 HK  香港 01
+      - 🇭🇰 HK  香港 02
       - 🇸🇬 SG 狮城 01
       - 🇸🇬 SG 狮城 02
       - 🇸🇬 SG 狮城 03
-      - "🇯🇵 JP  日本 01\r\r\r\r\r"
-      - "🇯🇵 JP  日本 02\r\r\r\r\r"
-      - "🇯🇵 JP  日本 03\r\r\r\r\r"
-      - 🇯🇵 JP  日本 04
-      - 🇯🇵 JP  日本 05
-      - 🇯🇵 JP 日本 06
-      - 🇯🇵 JP 日本 07
+      - 🇺🇸 US  美国 01
+      - 🇺🇸 US  美国 02
+      - 🇺🇸 US  美国 03
+      - "🇯🇵 JP  日本 01\r\r\r\r\r\r\r"
+      - "🇯🇵 JP  日本 02\r\r"
+      - 🇯🇵 JP  日本 03
+      - 🇯🇵 JP 日本 04
+      - 🇯🇵 JP 日本 05
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 US LIFAN
       - 🇹🇼 TW 台湾 ULTRA
+      - 🇹🇼 TW  台湾 01
+      - 🇹🇼 TW  台湾 02
+      - 🇭🇰 HK  香港 01
+      - 🇭🇰 HK  香港 02
       - 🇸🇬 SG 狮城 01
       - 🇸🇬 SG 狮城 02
       - 🇸🇬 SG 狮城 03
-      - "🇯🇵 JP  日本 01\r\r\r\r\r"
-      - "🇯🇵 JP  日本 02\r\r\r\r\r"
-      - "🇯🇵 JP  日本 03\r\r\r\r\r"
-      - 🇯🇵 JP  日本 04
-      - 🇯🇵 JP  日本 05
-      - 🇯🇵 JP 日本 06
-      - 🇯🇵 JP 日本 07
+      - 🇺🇸 US  美国 01
+      - 🇺🇸 US  美国 02
+      - 🇺🇸 US  美国 03
+      - "🇯🇵 JP  日本 01\r\r\r\r\r\r\r"
+      - "🇯🇵 JP  日本 02\r\r"
+      - 🇯🇵 JP  日本 03
+      - 🇯🇵 JP 日本 04
+      - 🇯🇵 JP 日本 05
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -151,18 +163,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 US LIFAN
       - 🇹🇼 TW 台湾 ULTRA
+      - 🇹🇼 TW  台湾 01
+      - 🇹🇼 TW  台湾 02
+      - 🇭🇰 HK  香港 01
+      - 🇭🇰 HK  香港 02
       - 🇸🇬 SG 狮城 01
       - 🇸🇬 SG 狮城 02
       - 🇸🇬 SG 狮城 03
-      - "🇯🇵 JP  日本 01\r\r\r\r\r"
-      - "🇯🇵 JP  日本 02\r\r\r\r\r"
-      - "🇯🇵 JP  日本 03\r\r\r\r\r"
-      - 🇯🇵 JP  日本 04
-      - 🇯🇵 JP  日本 05
-      - 🇯🇵 JP 日本 06
-      - 🇯🇵 JP 日本 07
+      - 🇺🇸 US  美国 01
+      - 🇺🇸 US  美国 02
+      - 🇺🇸 US  美国 03
+      - "🇯🇵 JP  日本 01\r\r\r\r\r\r\r"
+      - "🇯🇵 JP  日本 02\r\r"
+      - 🇯🇵 JP  日本 03
+      - 🇯🇵 JP 日本 04
+      - 🇯🇵 JP 日本 05
 
 rules:
 # 本地/局域网地址
