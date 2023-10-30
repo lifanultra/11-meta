@@ -1,10 +1,10 @@
 ####################################
-# 创建者：fan
+# 创建者：sad fan
 # 客户端：Clash
-# 创建时间：2023-10-30 20:31:00
+# 创建时间：2023-10-30 20:36:58
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：9
-# 节点类型：vmess, ss, trojan
+# 节点数量：5
+# 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,12 +87,8 @@ dns:
 
 proxies:
   - {"name":"🇹🇼 TW 台湾 ULTRA","type":"vmess","server":"ncst.eu.org","port":110,"cipher":"auto","uuid":"f9901a8a-361e-4658-b3d6-5d6c9fdf9a11","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lifan"}}
-  - {"name":"🇭🇰 HK  香港01","type":"ss","server":"gdcm.timiwc.com","port":48793,"password":"55179f89-d874-4b6e-a6be-ec62899291c3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇭🇰 HK  香港02","type":"ss","server":"js-cm.timiwc.com","port":58909,"password":"55179f89-d874-4b6e-a6be-ec62899291c3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸 US  美国01","type":"vmess","server":"mg1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"f-vali.cp31.ott.cibntv.net"}}}
   - {"name":"🇺🇸 US  美国02","type":"trojan","server":"mglmtv22.laoxiechuanmei.cc","port":46523,"udp":true,"password":"55179f89-d874-4b6e-a6be-ec62899291c3","sni":"mglmtv22.laoxiechuanmei.cc","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬 SG 狮城 01","type":"vmess","server":"sg1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
-  - {"name":"🇸🇬 SG 狮城02","type":"trojan","server":"sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇯🇵 JP  日本01","type":"vmess","server":"rb1.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/TS/recharge/tzUrl.html","headers":{"host":"api.cloud.189.cn"}}}
   - {"name":"🇯🇵 JP 日本02","type":"vmess","server":"jgw.262291.xyz","port":80,"cipher":"auto","uuid":"f5930d22-ee85-438d-a58e-af849da0bb84","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jgw.262291.xyz"}}}
 proxy-groups:
@@ -102,12 +98,8 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇹🇼 TW 台湾 ULTRA
-      - 🇭🇰 HK  香港01
-      - 🇭🇰 HK  香港02
       - 🇺🇸 US  美国01
       - 🇺🇸 US  美国02
-      - 🇸🇬 SG 狮城 01
-      - 🇸🇬 SG 狮城02
       - 🇯🇵 JP  日本01
       - 🇯🇵 JP 日本02
   - name: ♻️ 自动选择
@@ -117,12 +109,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇹🇼 TW 台湾 ULTRA
-      - 🇭🇰 HK  香港01
-      - 🇭🇰 HK  香港02
       - 🇺🇸 US  美国01
       - 🇺🇸 US  美国02
-      - 🇸🇬 SG 狮城 01
-      - 🇸🇬 SG 狮城02
       - 🇯🇵 JP  日本01
       - 🇯🇵 JP 日本02
   - name: 🎯 全球直连
@@ -143,12 +131,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇹🇼 TW 台湾 ULTRA
-      - 🇭🇰 HK  香港01
-      - 🇭🇰 HK  香港02
       - 🇺🇸 US  美国01
       - 🇺🇸 US  美国02
-      - 🇸🇬 SG 狮城 01
-      - 🇸🇬 SG 狮城02
       - 🇯🇵 JP  日本01
       - 🇯🇵 JP 日本02
 
