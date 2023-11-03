@@ -1,10 +1,10 @@
 ####################################
 # 创建者：fan
 # 客户端：Clash
-# 创建时间：2023-11-03 09:09:45
+# 创建时间：2023-11-03 09:12:13
 # 使用模版：ACL4SSR_Mini.ini
-# 节点数量：1
-# 节点类型：vmess
+# 节点数量：19
+# 节点类型：vmess, trojan
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,6 +87,24 @@ dns:
 
 proxies:
   - {"name":"🇹🇼 TW 台湾 ULTRA","type":"vmess","server":"ncst.eu.org","port":110,"cipher":"auto","uuid":"f9901a8a-361e-4658-b3d6-5d6c9fdf9a11","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lifan"}}
+  - {"name":"🇭🇰 香港核心 IEPL 01\r","type":"trojan","server":"hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 香港核心 IEPL 02\r","type":"trojan","server":"hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 香港核心 IEPL 03\r","type":"trojan","server":"hk2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇭🇰 香港核心 IEPL 04\r","type":"trojan","server":"hk2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡高级节点 01 10倍\r","type":"trojan","server":"0o0o0oo0oo0o0o00o00o0o00o0ocn1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":14001,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"baidu.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡高级节点 02 10倍\r","type":"trojan","server":"0o0o0oo0oo0o0o00o00o0o00o0ocn1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":14001,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"baidu.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本核心 IEPL 01\r","type":"trojan","server":"jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本核心 IEPL 02\r","type":"trojan","server":"jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本核心 IEPL 03\r","type":"trojan","server":"jp2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵 日本核心 IEPL 04\r","type":"trojan","server":"jp2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡核心 IEPL 01\r","type":"trojan","server":"sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡核心 IEPL 02\r","type":"trojan","server":"sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡核心 IEPL 03\r","type":"trojan","server":"sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬 新加坡核心 IEPL 04\r","type":"trojan","server":"sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国核心 IEPL 01\r","type":"trojan","server":"us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国核心 IEPL 02\r","type":"trojan","server":"us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国核心 IEPL 03\r","type":"trojan","server":"us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 美国核心 IEPL 04\r","type":"trojan","server":"us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz","port":443,"udp":true,"password":"2b6fd2dc-c3c5-4056-b941-c1579ec066da","sni":"144-22-163-118.nhost.00cdn.com","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -94,6 +112,24 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇹🇼 TW 台湾 ULTRA
+      - "🇭🇰 香港核心 IEPL 01\r"
+      - "🇭🇰 香港核心 IEPL 02\r"
+      - "🇭🇰 香港核心 IEPL 03\r"
+      - "🇭🇰 香港核心 IEPL 04\r"
+      - "🇸🇬 新加坡高级节点 01 10倍\r"
+      - "🇸🇬 新加坡高级节点 02 10倍\r"
+      - "🇯🇵 日本核心 IEPL 01\r"
+      - "🇯🇵 日本核心 IEPL 02\r"
+      - "🇯🇵 日本核心 IEPL 03\r"
+      - "🇯🇵 日本核心 IEPL 04\r"
+      - "🇸🇬 新加坡核心 IEPL 01\r"
+      - "🇸🇬 新加坡核心 IEPL 02\r"
+      - "🇸🇬 新加坡核心 IEPL 03\r"
+      - "🇸🇬 新加坡核心 IEPL 04\r"
+      - "🇺🇸 美国核心 IEPL 01\r"
+      - "🇺🇸 美国核心 IEPL 02\r"
+      - "🇺🇸 美国核心 IEPL 03\r"
+      - "🇺🇸 美国核心 IEPL 04\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -101,6 +137,24 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇹🇼 TW 台湾 ULTRA
+      - "🇭🇰 香港核心 IEPL 01\r"
+      - "🇭🇰 香港核心 IEPL 02\r"
+      - "🇭🇰 香港核心 IEPL 03\r"
+      - "🇭🇰 香港核心 IEPL 04\r"
+      - "🇸🇬 新加坡高级节点 01 10倍\r"
+      - "🇸🇬 新加坡高级节点 02 10倍\r"
+      - "🇯🇵 日本核心 IEPL 01\r"
+      - "🇯🇵 日本核心 IEPL 02\r"
+      - "🇯🇵 日本核心 IEPL 03\r"
+      - "🇯🇵 日本核心 IEPL 04\r"
+      - "🇸🇬 新加坡核心 IEPL 01\r"
+      - "🇸🇬 新加坡核心 IEPL 02\r"
+      - "🇸🇬 新加坡核心 IEPL 03\r"
+      - "🇸🇬 新加坡核心 IEPL 04\r"
+      - "🇺🇸 美国核心 IEPL 01\r"
+      - "🇺🇸 美国核心 IEPL 02\r"
+      - "🇺🇸 美国核心 IEPL 03\r"
+      - "🇺🇸 美国核心 IEPL 04\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -119,6 +173,24 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇹🇼 TW 台湾 ULTRA
+      - "🇭🇰 香港核心 IEPL 01\r"
+      - "🇭🇰 香港核心 IEPL 02\r"
+      - "🇭🇰 香港核心 IEPL 03\r"
+      - "🇭🇰 香港核心 IEPL 04\r"
+      - "🇸🇬 新加坡高级节点 01 10倍\r"
+      - "🇸🇬 新加坡高级节点 02 10倍\r"
+      - "🇯🇵 日本核心 IEPL 01\r"
+      - "🇯🇵 日本核心 IEPL 02\r"
+      - "🇯🇵 日本核心 IEPL 03\r"
+      - "🇯🇵 日本核心 IEPL 04\r"
+      - "🇸🇬 新加坡核心 IEPL 01\r"
+      - "🇸🇬 新加坡核心 IEPL 02\r"
+      - "🇸🇬 新加坡核心 IEPL 03\r"
+      - "🇸🇬 新加坡核心 IEPL 04\r"
+      - "🇺🇸 美国核心 IEPL 01\r"
+      - "🇺🇸 美国核心 IEPL 02\r"
+      - "🇺🇸 美国核心 IEPL 03\r"
+      - "🇺🇸 美国核心 IEPL 04\r"
 
 rules:
 # 本地/局域网地址
