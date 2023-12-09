@@ -9,6 +9,15 @@ proxies:
   - {name: 🇭🇰 HK 香港 02, server: 61.240.29.214, port: 18080, type: vmess, uuid: 35525447-accf-414f-815a-d32fb621baff, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: dc.yydsb.link}}}
   - {name: 🇺🇸 US 美国 03, server: a.sakuracat.site, port: 10019, type: trojan, password: 30cede4b-7dd8-42b1-86e3-4ff19d1fc9ff, sni: a.sakuracat.fun, skip-cert-verify: true}
   - {name: 🇸🇬 SG 狮城 04, server: 124.225.204.167, port: 32736, type: vmess, uuid: 35525447-accf-414f-815a-d32fb621baff, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: sg.grpc.gay}}}
+  - {name: 🇨🇳 TW 台湾 06, server: tc11.twtc.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vbub1, headers: {Host: tc11.twtc.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 07, server: tc12.twtc.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vbub2, headers: {Host: tc12.twtc.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 08, server: nbq11.ntbq.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /b11, headers: {Host: nbq11.ntbq.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 09, server: nbq12.ntbq.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /b12, headers: {Host: nbq12.ntbq.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 10, server: nbq13.ntbq.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /b13, headers: {Host: nbq13.ntbq.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 12, server: b21.ntbq.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /b21, headers: {Host: b21.ntbq.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 13, server: b22.ntbq.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /b22, headers: {Host: b22.ntbq.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 14, server: b23.ntbq.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /b23, headers: {Host: b23.ntbq.dynu.net}}}
+  - {name: 🇨🇳 TW 台湾 15, server: b24.ntbq.dynu.net, port: 443, type: vmess, uuid: 5de91c11-8c91-43ee-a571-4de7b7519f80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /b24, headers: {Host: b24.ntbq.dynu.net}}}
 proxy-groups:
   - name: Proxies
     type: select
@@ -17,6 +26,15 @@ proxy-groups:
       - 🇭🇰 HK 香港 02
       - 🇺🇸 US 美国 03
       - 🇸🇬 SG 狮城 04
+      - 🇨🇳 TW 台湾 06
+      - 🇨🇳 TW 台湾 07
+      - 🇨🇳 TW 台湾 08
+      - 🇨🇳 TW 台湾 09
+      - 🇨🇳 TW 台湾 10
+      - 🇨🇳 TW 台湾 12
+      - 🇨🇳 TW 台湾 13
+      - 🇨🇳 TW 台湾 14
+      - 🇨🇳 TW 台湾 15
 rules:
   - DOMAIN-SUFFIX,1password.com,DIRECT
   - DOMAIN-SUFFIX,vultr.com,DIRECT
